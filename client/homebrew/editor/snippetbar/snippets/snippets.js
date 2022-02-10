@@ -8,6 +8,7 @@ const CoverPageGen = require('./coverpage.gen.js');
 const TableOfContentsGen = require('./tableOfContents.gen.js');
 const dedent = require('dedent-tabs').default;
 const watercolorGen = require('./watercolor.gen.js');
+const ImageMaskGen = require('./imageMask.gen.js');
 
 
 module.exports = [
@@ -150,6 +151,11 @@ module.exports = [
 				name : 'Watercolor Splatter',
 				icon : 'fas fa-fill-drip',
 				gen  : watercolorGen,
+			},
+			{
+				name : 'Watercolor Image Mask',
+				icon : 'fas fa-fill-drip',
+				gen  : ImageMaskGen,
 			},
 			{
 				name : 'Watermark',
