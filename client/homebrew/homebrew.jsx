@@ -36,6 +36,10 @@ const Homebrew = createClass({
 		global.account = this.props.account;
 		global.version = this.props.version;
 		global.enable_v3 = this.props.enable_v3;
+
+		if(typeof window !== 'undefined') {
+			window.addEventListener('message', ({ data })=>console.log('data from postMesage: ', data));
+		}
 	},
 	render : function (){
 		return (

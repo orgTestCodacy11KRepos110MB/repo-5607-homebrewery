@@ -47,7 +47,7 @@ const BrewRenderer = createClass({
 												<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
 												<link href='/homebrew/bundle.css' rel='stylesheet' />
 												<base target=_blank>
-												</head><body style='overflow: hidden'><div></div></body></html>`
+												</head><body onload="parent.postMessage('iframe loaded', '*')" style='overflow: hidden'><div></div></body></html>`
 		};
 	},
 	height     : 0,
